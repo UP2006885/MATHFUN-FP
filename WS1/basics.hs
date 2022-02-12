@@ -13,3 +13,14 @@ volumeOfCylinder r l = (areaOfCircle r) * l
 
 distance :: Float -> Float -> Float -> Float -> Float
 distance x1 y1 x2 y2 = sqrt(((y1 - y2)^2) + ((x1 - x2)^2))
+
+threeDifference :: Int -> Int -> Int -> Bool
+threeDifference x y z = if (x /= y && x /= z && z /= y) then True else False
+
+divisibleBy :: Int -> Int -> Bool
+divisibleBy x y = if((x `mod` y) == 0) then True else False
+
+isEven :: Int -> Bool
+isEven x = (divisibleBy x 2)
+
+averageOfThree :: Int -> Int -> Int -> Float
