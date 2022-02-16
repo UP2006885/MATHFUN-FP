@@ -9,8 +9,8 @@ sign x
     | x > 0     = 1
     | otherwise = (-1)
 
-howManyFunctions :: Int -> Int -> Int -> Int
-howManyFunctions x y z
+howManyEqual :: Int -> Int -> Int -> Int
+howManyEqual x y z
     | x == y && y == z && z == x = 3
     | x == y || y == z || z == x = 2
     | otherwise = 0
