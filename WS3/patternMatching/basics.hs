@@ -1,6 +1,6 @@
 import Prelude hiding ((||)) -- Explicity says we are importing the prelude, but removing the or boolean function from the import.
 
-(||) :: Bool -> Bool -> Bool
+|| :: Bool -> Bool -> Bool
 True || True    = True
 False || True   = True
 True || False   = True
