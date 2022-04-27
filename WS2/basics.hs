@@ -3,7 +3,7 @@ absolute x
     | x >= 0    = x
     | otherwise = x * (-1)
 
-sign :: Int -> Int -- 1 = P 0 - -1 N 0 - 0
+sign :: Int -> Int
 sign x
     | x == 0    = 0
     | x > 0     = 1
