@@ -91,4 +91,6 @@ isPrime :: Int -> Bool
 isPrime x
     | length (divisors(x)) <= 2 = True
     | otherwise = False
-    
+
+split:: [(a,b)] -> ([a],[b])
+split listOfPairs = ([a | (a, _) <- listOfPairs], [b | (_, b) <- listOfPairs])
