@@ -39,3 +39,29 @@ zip (x:xs) (y:ys)  = (x,y) : zip xs ys
 zip _ _            = []
 
 -- My Code.
+headPlusOne :: [Int] -> Int
+headPlusOne [] = 0
+headPlusOne (x:xs) = x+1
+
+duplicateHead :: [a] -> [a]
+duplicateHead [] = []
+duplicateHead (x:xs) = (x:[x] ++ xs) 
+
+-- rotate :: [a] -> [a]
+-- rotate [] = []
+-- rotate (x:xs) = x:(head[xs])
+
+listLength :: [a] -> Int
+listLength [] = 0
+listLength (x:xs) = 1 + listLength(xs)
+
+multAll :: [Int] -> Int
+multAll [] = 1
+multAll (x:xs) = x * multAll (xs)
+
+andAll :: [Bool] -> Bool
+andAll [] = True
+andAll (False:xs) = False
+andAll (True:xs) = andAll xs
+
+-- Q7
