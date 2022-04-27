@@ -64,4 +64,10 @@ andAll [] = True
 andAll (False:xs) = False
 andAll (True:xs) = andAll xs
 
--- Q7
+countElems :: Int -> [Int] -> Int
+countElems n (x:xs)
+    | xs == []   = if x==n then 1 else 0
+    | n == x     = 1 + countElems n xs
+    | n /= x     = countElems n xs
+
+- Q8
